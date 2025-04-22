@@ -57,6 +57,9 @@ const LearningHubSection = () => {
           <p className="text-gray-400 max-w-2xl mx-auto">
             Access our comprehensive collection of cybersecurity resources, from beginner guides to advanced techniques.
           </p>
+          <div className="mt-4 inline-block px-4 py-2 bg-primary-500/20 rounded-full border border-primary-500/30">
+            <span className="text-primary-300 font-mono">Coming Soon</span>
+          </div>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
