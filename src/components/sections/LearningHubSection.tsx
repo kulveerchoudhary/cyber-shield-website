@@ -2,6 +2,61 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Book, Video, FileText, Code2, FlaskConical, Award, Download } from 'lucide-react';
 
+const ComingSoonTag = () => {
+  return (
+    <motion.div
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5 }}
+      className="mt-4 relative"
+    >
+      <motion.div
+        animate={{
+          rotateX: [0, 10, 0],
+          rotateY: [0, 10, 0],
+          rotateZ: [0, 5, 0],
+        }}
+        transition={{
+          duration: 5,
+          repeat: Infinity,
+          repeatType: "reverse",
+        }}
+        className="inline-block px-6 py-3 bg-gradient-to-r from-primary-500/20 to-secondary-500/20 rounded-lg border border-primary-500/30 backdrop-blur-sm"
+      >
+        <motion.span
+          animate={{
+            textShadow: [
+              "0 0 5px rgba(0,132,255,0.5)",
+              "0 0 10px rgba(0,132,255,0.8)",
+              "0 0 5px rgba(0,132,255,0.5)",
+            ],
+          }}
+          transition={{
+            duration: 2,
+            repeat: Infinity,
+            repeatType: "reverse",
+          }}
+          className="text-primary-300 font-mono text-lg tracking-wider"
+        >
+          COMING SOON
+        </motion.span>
+        <motion.div
+          animate={{
+            scale: [1, 1.1, 1],
+            opacity: [0.5, 1, 0.5],
+          }}
+          transition={{
+            duration: 2,
+            repeat: Infinity,
+            repeatType: "reverse",
+          }}
+          className="absolute -inset-1 bg-gradient-to-r from-primary-500/10 to-secondary-500/10 rounded-lg blur-sm"
+        />
+      </motion.div>
+    </motion.div>
+  );
+};
+
 const LearningHubSection = () => {
   const features = [
     {
@@ -57,9 +112,7 @@ const LearningHubSection = () => {
           <p className="text-gray-400 max-w-2xl mx-auto">
             Access our comprehensive collection of cybersecurity resources, from beginner guides to advanced techniques.
           </p>
-          <div className="mt-4 inline-block px-4 py-2 bg-primary-500/20 rounded-full border border-primary-500/30">
-            <span className="text-primary-300 font-mono">Coming Soon</span>
-          </div>
+          <ComingSoonTag />
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

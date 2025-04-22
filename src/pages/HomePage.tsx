@@ -16,6 +16,7 @@ import LearningHubSection from '../components/sections/LearningHubSection';
 import CursorEffect from '../components/effects/CursorEffect';
 import HackingAnimation from '../components/effects/HackingAnimation';
 import ScrollHackingEffect from '../components/effects/ScrollHackingEffect';
+import Navigation from '../components/ui/Navigation';
 
 const HomePage = () => {
   const servicesRef = useRef<HTMLDivElement>(null);
@@ -24,6 +25,7 @@ const HomePage = () => {
   return (
     <AnimatePresence>
       <div className="min-h-screen bg-dark-500 text-white relative overflow-hidden">
+        <Navigation />
         <BackgroundElements />
         <CursorEffect />
         <HackingAnimation />
