@@ -9,8 +9,6 @@ import WhyChooseUsSection from '../components/sections/WhyChooseUsSection';
 import CaseStudiesSection from '../components/sections/CaseStudiesSection';
 import MissionSection from '../components/sections/MissionSection';
 import ContactSection from '../components/sections/ContactSection';
-import ToolsSection from '../components/sections/ToolsSection';
-import OperationalUnitsSection from '../components/sections/OperationalUnitsSection';
 import TeamSection from '../components/sections/TeamSection';
 import LearningHubSection from '../components/sections/LearningHubSection';
 import CursorEffect from '../components/effects/CursorEffect';
@@ -32,20 +30,36 @@ const HomePage = () => {
         <ScrollHackingEffect />
         <BasicScene />
 
+        {/* 1. Home */}
         <IntroExperience servicesRef={servicesRef} contactRef={contactRef} />
+
+        {/* 2. Services */}
         <div ref={servicesRef}>
           <ServicesSection />
         </div>
-        <OperationalUnitsSection />
+
+        {/* 3. Methodology */}
         <MethodologySection />
+
+        {/* 4. Case Studies */}
         <CaseStudiesSection />
+
+        {/* 5. Mission */}
         <MissionSection />
+
+        {/* 6. Why Choose Us */}
         <WhyChooseUsSection />
-        <TeamSection />
-        <LearningHubSection />
+
+        {/* 7. Contact */}
         <div ref={contactRef}>
           <ContactSection />
         </div>
+
+        {/* 8. Founder */}
+        <TeamSection />
+
+        {/* 9. Learning Hub */}
+        <LearningHubSection />
       </div>
     </AnimatePresence>
   );
