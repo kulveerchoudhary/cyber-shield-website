@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /private/
+Disallow: /.well-known/
+Sitemap: https://cybershield.com/sitemap.xml 

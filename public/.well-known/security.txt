@@ -1,0 +1,7 @@
+Contact: security@cybershield.com
+Encryption: https://cybershield.com/.well-known/pgp-key.txt
+Acknowledgments: https://cybershield.com/security/acknowledgments
+Preferred-Languages: en
+Canonical: https://cybershield.com/.well-known/security.txt
+Policy: https://cybershield.com/security/policy
+Expires: 2025-12-31T00:00:00.000Z 

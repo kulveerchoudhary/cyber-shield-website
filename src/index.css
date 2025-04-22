@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles */
+@layer base {
+  html {
+    @apply bg-dark-500 text-white;
+  }
+  body {
+    @apply min-h-screen;
+  }
+}
+
+/* Remove all custom cursor styles */
